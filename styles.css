@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato' sans-serif;
+}
+
+body {
+    width: 100vw;
+    /* background: url('./assets/tomato.jpg') center no-repeat; */
+    background: linear-gradient(to right, pink, lightblue);
+    position: relative;
+    text-align: center;
+}
+
+.timer-container {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer-container #timer {
+    padding: 12px 48px;
+    margin: 18px;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    font-size: 4.5rem;
+    font-weight: Bold;
+    letter-spacing: 5px;
+    text-align: center;
+    color: #bd1515;
+    border: solid pink 2px;
+    box-shadow: 0 0 3px;
+}
+
+.timer-container #start-giveUp-btn {
+    width: 120px;
+    padding: 8px 16px;
+    background-color: #fff;
+    color: green;
+    border-radius: 0.3rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.timer-container #start-giveUp-btn:active {
+    border: solid 2px rgba(255, 255, 255, 0.8);
+}
+.timer-container .start-giveUp-btn > span {
+    margin-right: 4px;
+}
+
+.modal {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.modal-container {
+    width: 500px;
+    min-height: 220px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: solid 2px green;
+    border-radius: 2rem;
+    box-shadow: 0 0 3px;
+}
+.modal-container .modal-complete-noti {
+    margin-top: 40px;
+    font-size: 2rem;
+    color: green;
+}
+.modal-container .ok-btn {
+    padding: 8px;
+    width: 64px;
+    color: green;
+    border: solid 2px green;
+    cursor: pointer;
+}
+.modal-container .ok-btn:hover {
+    background-color: green;
+    color: #fff;
+}
+.pomodoro-count {
+    margin-top: 20px;
+    padding: 20px;
+    width: 100vw;
+    background-color: #fff;
+}
+
