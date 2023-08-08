@@ -20,22 +20,29 @@ body {
     justify-content: center;
     align-items: center;
 }
-
+.timer-container .timer-progress {
+    background: conic-gradient(red 0%, rgba(255, 255, 255, 0.1) 0deg);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .timer-container #timer {
-    padding: 12px 48px;
-    margin: 18px;
+    margin: 4px;
+    width: 300px;
+    height: 300px;
     background-color: #fff;
-    border-radius: 0.5rem;
+    border-radius: 50%;
     font-size: 4.5rem;
     font-weight: Bold;
     letter-spacing: 5px;
     text-align: center;
+    line-height: 300px;
     color: #bd1515;
-    border: solid pink 2px;
-    box-shadow: 0 0 3px;
 }
 
 .timer-container #start-giveUp-btn {
+    margin-top: 20px;
     width: 120px;
     padding: 8px 16px;
     background-color: #fff;
@@ -94,18 +101,10 @@ body {
     color: #fff;
 }
 .pomodoro-count {
+    margin-top: 20px;
     padding: 20px;
     width: 100vw;
     background-color: #fff;
-}
-.progress-bar {
-    width: 100%;
-}
-.progress-bar .passed-progress {
-    margin-top: 20px;
-    height: 3px;
-    width: 0px;
-    background-color: green;
 }
 @keyframes FadeIn {
     from {

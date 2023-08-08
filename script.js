@@ -3,7 +3,7 @@ const startGiveUp_btn = document.getElementById('start-giveUp-btn');
 const modal = document.querySelector('.modal');
 const done_btn = document.querySelector('.ok-btn');
 // progress bar
-const progress = document.querySelector('.passed-progress')
+const progress = document.querySelector('.timer-progress')
 
 let seconds = 0;
 let minutes = 25;
@@ -92,8 +92,9 @@ function closeCompleteModal() {
     modal.style.display = 'none';
 }
 function updateProgress() {
-    let W = window.innerWidth;
-    let remainSeconds = minutes*60 + seconds;
-    progress.style.width = (((1500 - remainSeconds)/1500)*W).toString() + 'px';
+    let passedSeconds = 1500 - minutes*60 - seconds;
+    let percent = ((passedSeconds / 1500)*100).toFixed(2).toString() + '%';
+    console.log(percent);
+    progress.style.setProperty('background', `conic-gradient(red ${percent}, rgba(255, 255, 255, 0.1) 0deg)`)
 }
 
